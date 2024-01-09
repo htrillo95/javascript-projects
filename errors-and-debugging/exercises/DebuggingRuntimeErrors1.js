@@ -3,8 +3,8 @@
 
 let launchReady = false;
 let fuelLevel = 17000;
-
-if (fuellevel >= 20000) {
+// fuelLevel was lowercased!!! now it runs!
+if (fuelLevel >= 20000) {
    console.log('Fuel level cleared.');
    launchReady = true;
 } else {

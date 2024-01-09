@@ -1,7 +1,7 @@
 // Now consider both if/else blocks together (keeping the added console.log lines). 
 // Run the code and examine the output. 
 
-// Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
+// Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false? IT SHOULD BE FALSE? THE FIRST TEST FAILS (INSUFFICIENT FUEL LEVELS) BUT STILL LIFTOFF
 // Is the program behaving as expected?
 
 let launchReady = false;
@@ -29,9 +29,9 @@ if (crewStatus && computerStatus === 'green'){
 
 console.log("launchReady = ", launchReady);
 
-// if (launchReady) {
-//    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
-//    console.log('Liftoff!');
-// } else {
-//    console.log('Launch scrubbed.');
-// }
+ if (launchReady) {
+    console.log('10, 9, 8, 7, 6, 5, 4, 3, 2, 1...');
+    console.log('Liftoff!');
+ } else {
+    console.log('Launch scrubbed.');
+ }
