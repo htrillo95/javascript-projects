@@ -54,6 +54,7 @@ if (weatherStatus = "clear") {
     console.log ("ABORT! Weather not clear.");
 }
 // Verify shuttle launch can proceed based on above conditions
+if (preparedForLiftOff);
 console.log ("------------------------------------------------");
 console.log (date = "Monday 2019-03-18");
 console.log (time = "10:05:34 AM");
