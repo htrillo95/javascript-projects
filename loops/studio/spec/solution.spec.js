@@ -1,8 +1,11 @@
 const studentsolution = require('../solution.js');
 
 describe ("Loops studio solution", function() {
-
-   let protein, grains, veggies, beverages, desserts;
+   let protein = ['chicken', 'pork', 'tofu', 'beef', 'fish', 'beans'];
+   let grains = ['rice', 'pasta', 'corn', 'potato', 'quinoa', 'crackers'];
+   let veggies = ['peas', 'green beans', 'kale', 'edamame', 'broccoli', 'asparagus'];
+   let beverages = ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'];
+   let desserts = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'];
 
    beforeAll(async function () {
       protein = studentsolution.protein;
@@ -74,6 +77,8 @@ describe ("Loops studio solution", function() {
       expect(testMeals3.length).toBe(4);
       expect(testMeals3[3].length).toBe(5);
    });
+
+   
 
    /// BONUS MISSION TEST ///
 
