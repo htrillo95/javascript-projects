@@ -70,3 +70,10 @@ return diamond;
 }
 
 console.log(makeDiamond(5));
+
+
+//funtion reverse(s) {
+    //return s.split('').reverse().join('');
+// }
+// let str = "launchcode";
+// console.log(reverse(str));
