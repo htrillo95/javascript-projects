@@ -5,6 +5,16 @@ a) If passed a number, return the tripled value.
 b) If passed a string, return the string “ARRR!”
 c) Be sure to test your function before moving on the next part. 
 */
+let myFunction = function (value) {
+    if (typeof value === 'number') {
+      return value * 3; // Triple the number
+    } else if (typeof value === 'string') {
+      return 'ARRR!'; // Returns "ARRR!" for string
+    }
+  };
+    console.log(myFunction(10));      // Prints 15
+    console.log(myFunction('Hello')); // Prints "ARRR!"
+
 
 /* Add to your code! Use your fuction and the map method to change an array  as follows:
 a) Triple any the numbers.
@@ -13,3 +23,8 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+
+let newArr = arr.map(myFunction);
+
+// Printing the new array
+console.log(newArr);
