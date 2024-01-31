@@ -7,12 +7,12 @@ c) Be sure to test your function before moving on the next part.
 */
 let myFunction = function (value) {
     if (typeof value === 'number') {
-      return value * 3; // Triple the number
+      return value * 3; // Triples the number
     } else if (typeof value === 'string') {
       return 'ARRR!'; // Returns "ARRR!" for string
     }
   };
-    console.log(myFunction(10));      // Prints 15
+    console.log(myFunction(15));      // Prints 15
     console.log(myFunction('Hello')); // Prints "ARRR!"
 
 
