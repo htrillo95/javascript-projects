@@ -1,4 +1,9 @@
 function whoWon(player1,player2){
+  const validInputs = ['rock', 'paper', 'scissors'];
+  //BONUS 
+   if (!validInputs.includes(player1) || !validInputs.includes(player2)) {
+    return 'Invalid input. Please enter either "rock", "paper", or "scissors".';
+   }
 
    if (player1 === player2){
      return 'TIE!';
@@ -18,3 +23,6 @@ function whoWon(player1,player2){
  
    return 'Player 1 wins!';
  }
+ module.exports = {
+  whoWon: whoWon
+};
