@@ -8,7 +8,22 @@
           fetch("https://handlers.education.launchcode.org/static/weather.json").then( function(response) {
               // Access the JSON in the response
               response.json().then( function(json) {
-                console.log(json);
+                const container = document.getElementById("container");
+            json.forEach(function(astronaut) {
+              const astronautDiv = document.createElement("div");
+              astronautDiv.classList.add("astronaut");
+              
+              const astronautInfo = `
+                <img src="${astronaut.picture}" class="avatar" alt="${astronaut.firstName} ${astronaut.lastName}">
+                <div>
+                  <h2>${astronaut.firstName} ${astronaut.lastName}</h2>
+                  <ul>
+                    <li>Hours in space: ${astronaut.hoursInSpace}</li>
+                    <li>Active: ${astronaut.active}</li>
+                    <li>Skills: ${astronaut.skills.join(", ")}</li>
+                  </ul>
+                </div>
+              `;
               });
           });
       });
